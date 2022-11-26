@@ -1,0 +1,196 @@
+*{
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.hero{
+    height: 350px;
+    width: 100%;
+    background-position: center;
+    background: linear-gradient(rgb(45, 43, 43),rgba(79, 67, 157, 0.716)), url("./images/patrick-tomasso-1NTFSnV-KLs-unsplash.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+}
+
+h1{
+    color: wheat;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container{
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	margin-bottom: 100px;
+}
+.intro{
+	display: flex;
+	flex-direction: column;
+	margin: 25px;
+}
+.intro p{
+	line-height: 1.8;
+	font-size: 16px;
+	text-align: center;
+}
+
+h2{
+	font-size: 18px;
+	color: rgb(49, 51, 98);
+	font-family: sans-serif;
+	text-align: center;
+	padding-bottom:20px;
+}
+.forum{
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	justify-content: center;
+	grid-gap:30px;
+	margin: 0 20px 0 20px;
+}
+.card-footer,.card-header,.counter{
+	text-align: center;
+}
+.card-header{
+	background-color: rgba(79, 67, 157, 0.475);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;	
+}
+.user{
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	gap:10px;
+}
+.btn-light{
+	border-radius: 5px;
+	padding: 7px 10px 7px 10px;
+}
+.delete{
+	font-size: 100px;
+}
+.name{
+	align-self: center;
+}
+.far{
+	align-self: center;
+	font-size: 22px;
+	cursor: pointer;
+}
+.icons{
+	color:whitesmoke;
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+}
+.card-footer{
+	color:rgb(38, 34, 34);
+	font-weight: bold;
+}
+.counter{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap:30px;
+	margin: 10px;
+}
+.plus{
+	color:#609fb8;
+	cursor: pointer;
+}
+.minus{
+	color:#b1487e;
+	cursor: pointer;
+}
+#addform{
+	display:flex;
+	flex-direction: column;
+	margin: 20px 20px 0 20px;
+}
+label{
+	font-weight: bold;
+	font-size: 20px;
+}
+.form-control{
+	height:100px;
+}
+.modal{
+	background-color: rgba(0,0,0,0.5);
+}
+.modal-dialog{
+	width:100%;
+}
+.modal-title{
+	font-weight: bold;
+	font-size: 20px;
+}
+.button1{
+	width:40%;
+	align-self:end;
+	color: whitesmoke;
+	background-color: rgba(79, 67, 157, 0.564);
+}
+.button2{
+	background-color: rgba(79, 67, 157, 0.564);
+	color: white;
+}
+.footer{
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 150px;
+	background: rgba(26, 24, 24, 0.928); 
+	font-family: 'Quicksand', sans-serif;
+	color:rgb(255, 255, 255);
+}
+.fa-arrow-circle-up{
+	font-size: 25px;
+	color:rgb(255, 255, 255);
+}
+
+@media screen and (min-width:600px){
+	.hero{
+		height: 350px;
+		background-position: center;
+	}
+	h2{
+		font-size: 20px;
+	}
+    .intro p{
+	 	font-size: 18px;
+    }
+}
+@media screen and (min-width:800px){
+	.hero{
+		height: 400px;
+		
+	}
+	.button1{
+		width:25%;
+	}
+	.footer {
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: center;
+		padding: 0 50px 0 50px;
+		height: 100px;
+	}
+}
+@media screen and (min-width:1200px){
+	.hero{
+		height: 500px;
+	}
+	h2{
+		font-size: 22px;
+	}
+    .intro p{
+	 	font-size: 20px;
+    }
+}
