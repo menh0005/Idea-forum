@@ -1,10 +1,4 @@
-# mtm6302-project-1
-
-## Idea Forum By:
-Meryem Menhich
-
-## Student number:
-041020451
+# Idea Forum
 
 ## Credits:
 Banner image : https://unsplash.com/
